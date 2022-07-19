@@ -1,0 +1,61 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .todo-list-container {
+    margin-top: 50px;
+    width: 500px;
+
+    .todo-list {
+      @apply flex flex-col justify-center gap-4 mt-4;
+    }
+  }
+}
+
+.fade-in-appear {
+  opacity: 0;
+}
+
+.fade-in-appear-done {
+  opacity: 1;
+}
+
+.fade-in-enter {
+  animation: slider-in 0.5s;
+}
+
+.fade-in-exit {
+  opacity: 1;
+  animation: slider-out 0.5s;
+}
+
+@keyframes slider-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slider-out {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

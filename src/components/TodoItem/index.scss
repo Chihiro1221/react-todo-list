@@ -1,0 +1,9 @@
+.todo-item {
+  @apply bg-violet-500 text-white px-4 py-2 rounded duration-300 shadow-md relative;
+  .close {
+    @apply absolute right-4 top-1/2 -translate-y-1/2 w-[20px] h-[20px] flex items-center justify-center duration-200 cursor-pointer;
+    &:hover {
+      @apply bg-white text-violet-500 rounded-full;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.input-container {
+  @apply flex items-center;
+  .submit-btn {
+    @apply w-[100px] ml-4 rounded bg-violet-600 text-white px-4 py-2 hover:bg-violet-500 duration-300;
+  }
+}
